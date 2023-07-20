@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\webapi",
-    "\\webapi\\Controllers"
+    "\\back",
+    "\\back\\webapi"
   ],
-  "SelectedNode": "\\webapi\\Controllers",
+  "SelectedNode": "\\back\\rsp_assessment.sln",
   "PreviewInSolutionExplorer": false
 }

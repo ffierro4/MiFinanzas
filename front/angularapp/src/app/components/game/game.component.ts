@@ -82,6 +82,7 @@ export class GameComponent implements OnInit {
     const apiUrl = 'https://localhost:7189/api/players/save-winner';
     this.http.post(apiUrl, { winner: winnerName }).subscribe(
       (response) => {
+        //console.log() de guía
         console.log('Ganador guardado en la base de datos');
       },
       (error) => {

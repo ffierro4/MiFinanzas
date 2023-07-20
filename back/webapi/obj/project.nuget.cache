@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "grjVIjPoHaOz8nFYKPwHS3Z7oPBQEK6mi+SFQVoz7/f7YWzIIvTwWTYvkG6qrF+sy9KhIGOyFwx5UmckY6CDCQ==",
+  "dgSpecHash": "tkCUAShWd0wAH5m9GatDaLF7EbzuXj89+qzwil8gOh5Xaa4ImdasagDIVNmLoomA1+S7+7TTEfd1GJjVGRwE0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nacho\\Desktop\\MiFinanzas\\rsp_assessment\\webapi\\webapi.csproj",
+  "projectFilePath": "C:\\Users\\nacho\\Desktop\\MiFinanzas_assessment\\back\\webapi\\webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nacho\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\nacho\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

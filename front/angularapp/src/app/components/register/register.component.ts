@@ -38,7 +38,6 @@ export class RegisterComponent implements OnInit {
     };
 
     this._playerService.addPlayers(match).subscribe((data) => {
-      console.log(data);
       this.router.navigate(['/game'], {
         queryParams: { player1, player2 },
       });
