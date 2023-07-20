@@ -1,0 +1,100 @@
+<div class="title">
+  <h2><strong class="fs-1">Make your moves!</strong></h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 score-section">
+      <h3 class="m-3">
+        <strong style="color: black">{{ player1 }}</strong> score:
+        {{ player1Score }} rounds won.
+      </h3>
+      <h3 class="m-3">
+        <strong style="color: black">{{ player2 }}</strong> score:
+        {{ player2Score }} rounds won.
+      </h3>
+    </div>
+
+    <div class="col-4 player-section">
+      <h3 class="m-3" *ngIf="!player1Choice && !winner">
+        Your turn, <strong style="color: black">{{ player1 }}</strong
+        >!
+      </h3>
+      <h3 class="m-3" *ngIf="player1Choice && !winner">
+        Waiting for <strong style="color: black">{{ player2 }}</strong
+        >...
+      </h3>
+      <h3 class="m-3" *ngIf="winner && winner === player1">
+        {{ player1 }} won the round!
+      </h3>
+      <h3 class="m-3" *ngIf="winner && winner === player2">
+        {{ player2 }} won the round!
+      </h3>
+
+      <div class="btns">
+        <button
+          class="btn"
+          (click)="makeMove('player1', 'Rock')"
+          [disabled]="player1Choice || winner"
+        >
+          Rock
+        </button>
+        <button
+          class="btn"
+          (click)="makeMove('player1', 'Scissors')"
+          [disabled]="player1Choice || winner"
+        >
+          Scissors
+        </button>
+        <button
+          class="btn"
+          (click)="makeMove('player1', 'Paper')"
+          [disabled]="player1Choice || winner"
+        >
+          Paper
+        </button>
+      </div>
+    </div>
+
+    <div class="col-4 player-section">
+      <h3 class="m-3" *ngIf="!player2Choice && !winner">
+        Your turn, <strong style="color: black">{{ player2 }}</strong
+        >!
+      </h3>
+      <h3 class="m-3" *ngIf="player2Choice && !winner">
+        Waiting for <strong style="color: black">{{ player1 }}</strong
+        >...
+      </h3>
+      <h3 class="m-3" *ngIf="winner && winner === player1">
+        {{ player1 }} won the round!
+      </h3>
+      <h3 class="m-3" *ngIf="winner && winner === player2">
+        {{ player2 }} won the round!
+      </h3>
+
+      <div class="btns">
+        <button
+          class="btn"
+          (click)="makeMove('player2', 'Rock')"
+          [disabled]="player2Choice || winner"
+        >
+          Rock
+        </button>
+        <button
+          class="btn"
+          (click)="makeMove('player2', 'Scissors')"
+          [disabled]="player2Choice || winner"
+        >
+          Scissors
+        </button>
+        <button
+          class="btn"
+          (click)="makeMove('player2', 'Paper')"
+          [disabled]="player2Choice || winner"
+        >
+          Paper
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

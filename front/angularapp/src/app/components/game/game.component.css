@@ -1,0 +1,40 @@
+.container {
+  margin: 20px auto;
+  max-width: 850px;
+}
+
+.score-section {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+}
+
+.player-section {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  border-right: 2px solid #ffffff;
+  padding: 7px;
+}
+
+.btns {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #31cd36;
+  color: #00ff08;
+  margin: 5px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn:hover {
+  background-color: #01ff0e;
+  color: #ffffff;
+  cursor: pointer;
+}

@@ -1,0 +1,61 @@
+<div class="title">
+  <h1><strong class="fs-1">Let's play Rock, Scissors & Paper!</strong></h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <form [formGroup]="form" class="input mt-5">
+        <div class="div">
+          <label for="player1" class="p-1">Player 1: </label>
+          <input
+            type="text"
+            formControlName="player1"
+            name="player1"
+            id="player1"
+            autocomplete="off"
+            placeholder="Nickname..."
+          />
+        </div>
+        <div class="div">
+          <label for="player2" class="p-1">Player 2: </label>
+          <input
+            type="text"
+            formControlName="player2"
+            name="player2"
+            id="player2"
+            autocomplete="off"
+            placeholder="Nickname..."
+          />
+        </div>
+        <button
+          (click)="addPlayers()"
+          [disabled]="form.invalid"
+          type="button"
+          class="btn btn-success mt-2"
+        >
+          Play
+        </button>
+      </form>
+    </div>
+    <div class="col-lg-5 mt-5">
+      <div class="last-winners">
+        <h2>Last Winners <i class="bi bi-trophy-fill"></i></h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="fs-5">Players</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let winner of lastWinners">
+              <td>
+                <hr />
+                <i class="bi bi-award-fill"></i> <strong>{{ winner }}</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
